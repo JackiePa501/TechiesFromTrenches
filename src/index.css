@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-primary: #0A0A0F;
+    --color-bg-secondary: #111118;
+    --color-bg-tertiary: #1A1A24;
+    --color-text-primary: #F5F0EB;
+    --color-text-secondary: #8A8580;
+    --color-text-muted: #5A5550;
+    --color-accent-gold: #D4A853;
+    --color-accent-gold-light: #E8C87A;
+    --color-accent-gold-dark: #B08D3E;
+    --color-accent-coral: #E07A5F;
+    --color-border: rgba(245, 240, 235, 0.08);
+    --color-border-hover: rgba(212, 168, 83, 0.3);
+
+    --font-display: 700 clamp(3rem, 8vw, 6rem) / 0.95 'Space Grotesk', sans-serif;
+    --font-h1: 700 clamp(2rem, 5vw, 3.5rem) / 1.1 'Space Grotesk', sans-serif;
+    --font-h2: 600 clamp(1.5rem, 3vw, 2.25rem) / 1.2 'Space Grotesk', sans-serif;
+    --font-h3: 600 1.25rem / 1.3 'Inter', sans-serif;
+    --font-body: 400 1.125rem / 1.7 'Inter', sans-serif;
+    --font-body-sm: 400 0.9375rem / 1.6 'Inter', sans-serif;
+    --font-caption: 500 0.75rem / 1.4 'Inter', sans-serif;
+    --font-cta: 600 1rem / 1 'Space Grotesk', sans-serif;
+
+    --space-section: clamp(6rem, 12vh, 10rem);
+    --space-component: clamp(2rem, 4vw, 4rem);
+    --space-element: 1.5rem;
+    --space-tight: 0.75rem;
+    --page-margin: clamp(1.5rem, 5vw, 4rem);
+    --container-max: 1200px;
+    --card-padding: 2rem;
+    --card-radius: 16px;
+    --button-radius: 100px;
+
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.625rem;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+}
