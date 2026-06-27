@@ -174,7 +174,7 @@ export default function Hero({ lenisRef }: HeroProps) {
               el.style.transform = 'scale(1)';
             }}
           >
-            Join Now — ₦5,000/month
+            Join Now — ₦3,000/month
           </button>
           <button
             onClick={() => scrollTo('#benefits')}

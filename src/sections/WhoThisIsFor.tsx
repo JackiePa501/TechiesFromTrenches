@@ -12,6 +12,7 @@ const personas = [
   'Cloud Engineers',
   'Developers',
   'Designers',
+  'Data Analysts',
 ];
 
 export default function WhoThisIsFor() {
