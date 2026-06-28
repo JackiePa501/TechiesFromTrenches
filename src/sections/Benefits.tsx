@@ -140,7 +140,7 @@ export default function Benefits() {
                   fontSize: '1.25rem',
                 }}
               >
-                {benefit.icon}
+          
               </div>
               <div style={{ flex: 1 }}>
                 <h3
