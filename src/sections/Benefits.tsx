@@ -6,37 +6,30 @@ gsap.registerPlugin(ScrollTrigger);
 
 const benefits = [
   {
-    icon: '🎯',
     title: 'Monthly Career Strategy Session',
     description: 'One live implementation session focused on real career progress — not theory.',
   },
   {
-    icon: '📄',
     title: 'Professional CV Review',
     description: 'Personalized feedback to make your CV stand out for recruiters, scholarships, and global opportunities.',
   },
   {
-    icon: '💼',
     title: 'LinkedIn Optimization',
     description: 'Improve your profile so recruiters and hiring managers can find and trust you.',
   },
   {
-    icon: '📈',
     title: 'Monthly Career Check-in',
     description: 'Set goals, review progress, identify blockers, and leave with a clear action plan.',
   },
   {
-    icon: '🌍',
     title: 'Exclusive Opportunity Roundup',
     description: 'Curated scholarships, internships, externships, fellowships, remote jobs, and competitions.',
   },
   {
-    icon: '🤝',
     title: 'Private Community',
     description: 'Connect with ambitious African tech talents building global careers.',
   },
   {
-    icon: '❓',
     title: 'Priority Q&A',
     description: 'Ask career questions anytime inside the community.',
   },
