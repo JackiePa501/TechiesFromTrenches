@@ -110,7 +110,7 @@ export default function About() {
                 opacity: 0,
               }}
             >
-              Paul
+              Paul Jackson
             </h2>
 
             <div
