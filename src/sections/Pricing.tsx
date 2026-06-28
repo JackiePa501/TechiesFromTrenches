@@ -89,7 +89,7 @@ export default function Pricing() {
     setSelectedPlan(null); // Close modal
   };
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (!sectionRef.current) return;
     const ctx = gsap.context(() => {
       // Header animation
@@ -135,7 +135,7 @@ export default function Pricing() {
       }
     }, sectionRef);
     return () => ctx.revert();
-  }, []);
+  }, []); */
 
   return (
     <section
