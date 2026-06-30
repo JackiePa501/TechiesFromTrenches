@@ -67,14 +67,12 @@ export default function Problem() {
             The Problem
           </span>
           <h2
+            className="tft-heading"
             style={{
-              fontFamily: "'Space Grotesk', sans-serif",
-              fontWeight: 700,
-              fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-              lineHeight: 1.1,
-              letterSpacing: '-0.02em',
-              color: 'var(--color-text-primary)',
+              fontSize: 'clamp(2.25rem, 5vw, 4rem)',
+              lineHeight: 0.98,
               marginTop: '1rem',
+              maxWidth: '16ch',
             }}
           >
             You Don&apos;t Need Another Course
@@ -96,37 +94,42 @@ export default function Problem() {
               style={{
                 fontFamily: "'Inter', sans-serif",
                 fontWeight: 400,
-                fontSize: '1.125rem',
-                lineHeight: 1.7,
+                fontSize: '1.25rem',
+                lineHeight: 1.65,
                 color: 'var(--color-text-secondary)',
               }}
             >
               Most people spend years learning random skills, collecting certificates,
-              applying to hundreds of opportunities, and getting rejected without
-              knowing why.
+              applying to hundreds of opportunities, and{' '}
+              <span style={{ color: 'var(--color-text-primary)', fontWeight: 600 }}>
+                getting rejected without knowing why.
+              </span>
             </p>
             <p
               className="problem-animate"
               style={{
                 fontFamily: "'Inter', sans-serif",
                 fontWeight: 400,
-                fontSize: '1.125rem',
-                lineHeight: 1.7,
+                fontSize: '1.25rem',
+                lineHeight: 1.65,
                 color: 'var(--color-text-secondary)',
-                marginTop: '1rem',
+                marginTop: '1.25rem',
               }}
             >
               The difference between those who stay stuck and those who get global
-              opportunities is often positioning, accountability, and consistency.
+              opportunities is often{' '}
+              <span style={{ color: 'var(--color-accent-2)', fontWeight: 600 }}>
+                positioning, accountability, and consistency.
+              </span>
             </p>
             <div
-              className="problem-animate"
+              className="problem-animate tft-card"
               style={{
                 marginTop: '2rem',
-                padding: '1.5rem',
-                borderRadius: '12px',
-                border: '1px solid var(--color-border)',
-                background: 'rgba(224, 122, 95, 0.05)',
+                padding: '1.75rem',
+                background:
+                  'linear-gradient(180deg, rgba(76,141,255,0.10), rgba(76,141,255,0.03))',
+                borderColor: 'var(--color-border-hover)',
               }}
             >
               <p
@@ -149,34 +152,19 @@ export default function Problem() {
             {stats.map((stat, i) => (
               <div
                 key={i}
-                className="problem-animate"
+                className="problem-animate tft-card"
                 style={{
                   padding: 'var(--card-padding)',
-                  borderRadius: 'var(--card-radius)',
-                  background: 'var(--color-bg-secondary)',
-                  border: '1px solid var(--color-border)',
-                  transition: 'all 0.3s ease',
                   cursor: 'default',
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = 'var(--color-border-hover)';
-                  el.style.transform = 'translateY(-4px)';
-                  el.style.boxShadow = '0 8px 32px rgba(0,0,0,0.3)';
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = 'var(--color-border)';
-                  el.style.transform = 'translateY(0)';
-                  el.style.boxShadow = 'none';
                 }}
               >
                 <div
                   style={{
-                    fontFamily: "'Space Grotesk', sans-serif",
-                    fontWeight: 700,
-                    fontSize: '2.5rem',
-                    color: 'var(--color-accent-gold)',
+                    fontFamily: "'Bebas Neue', sans-serif",
+                    fontWeight: 400,
+                    fontSize: '3.25rem',
+                    letterSpacing: '0.01em',
+                    color: 'var(--color-accent)',
                     lineHeight: 1,
                   }}
                 >

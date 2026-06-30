@@ -58,14 +58,13 @@ export default function FinalCTA({ lenisRef }: FinalCTAProps) {
         }}
       >
         <h2
-          className="cta-animate"
+          className="cta-animate tft-heading"
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontWeight: 700,
-            fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-            lineHeight: 1.1,
-            letterSpacing: '-0.02em',
-            color: 'var(--color-text-primary)',
+            fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
+            lineHeight: 0.95,
+            maxWidth: '18ch',
+            marginLeft: 'auto',
+            marginRight: 'auto',
             opacity: 0,
           }}
         >
@@ -87,35 +86,9 @@ export default function FinalCTA({ lenisRef }: FinalCTAProps) {
           From Trenches — Global Talent Circle today.
         </p>
         <button
-          className="cta-animate"
+          className="cta-animate tft-btn tft-btn-primary"
           onClick={scrollToPricing}
-          style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontWeight: 600,
-            fontSize: '1rem',
-            letterSpacing: '0.02em',
-            background: 'var(--color-accent-gold)',
-            color: 'var(--color-bg-primary)',
-            border: 'none',
-            borderRadius: 'var(--button-radius)',
-            padding: '1rem 2.5rem',
-            marginTop: '2.5rem',
-            cursor: 'pointer',
-            transition: 'all 0.25s ease',
-            opacity: 0,
-          }}
-          onMouseEnter={(e) => {
-            const el = e.currentTarget;
-            el.style.background = 'var(--color-accent-gold-light)';
-            el.style.transform = 'scale(1.03)';
-            el.style.boxShadow = '0 8px 32px rgba(212,168,83,0.25)';
-          }}
-          onMouseLeave={(e) => {
-            const el = e.currentTarget;
-            el.style.background = 'var(--color-accent-gold)';
-            el.style.transform = 'scale(1)';
-            el.style.boxShadow = 'none';
-          }}
+          style={{ marginTop: '2.5rem', opacity: 0, padding: '0 2.5rem' }}
         >
           Become a Founding Member
         </button>

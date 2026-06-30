@@ -66,19 +66,72 @@ export default function About() {
         >
           {/* Left Column - Photo */}
           <div className="about-animate" style={{ opacity: 0 }}>
-            <img
-              src="/images/founder-photo.jpg"
-              alt="Paul - Founder of Techies From Trenches"
+            <div
               style={{
+                position: 'relative',
                 width: '100%',
-                maxWidth: '400px',
-                aspectRatio: '1/1',
-                objectFit: 'cover',
+                maxWidth: '420px',
                 borderRadius: 'var(--card-radius)',
-                border: '2px solid var(--color-border)',
-                display: 'block',
+                overflow: 'hidden',
+                border: '1px solid var(--color-card-border)',
+                background: 'var(--color-card-bg)',
+                backdropFilter: 'blur(18px)',
+                WebkitBackdropFilter: 'blur(18px)',
+                boxShadow: '0 24px 60px rgba(0,0,0,0.4)',
               }}
-            />
+            >
+              <img
+                src="/images/founder-photo.jpg"
+                alt="Paul Jackson, founder of Techies From Trenches"
+                style={{
+                  display: 'block',
+                  width: '100%',
+                  aspectRatio: '4/5',
+                  objectFit: 'cover',
+                }}
+              />
+              <div
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  background:
+                    'linear-gradient(180deg, transparent 55%, rgba(12,19,32,0.85) 100%)',
+                }}
+              />
+              <div
+                style={{
+                  position: 'absolute',
+                  left: '1.25rem',
+                  bottom: '1.25rem',
+                  right: '1.25rem',
+                }}
+              >
+                <div
+                  style={{
+                    fontFamily: "'Bebas Neue', sans-serif",
+                    fontSize: '1.6rem',
+                    letterSpacing: '0.03em',
+                    color: 'var(--color-text-primary)',
+                    lineHeight: 1,
+                  }}
+                >
+                  Paul Jackson
+                </div>
+                <div
+                  style={{
+                    fontFamily: "'Inter', sans-serif",
+                    fontWeight: 500,
+                    fontSize: '0.75rem',
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                    color: 'var(--color-accent-2)',
+                    marginTop: '0.35rem',
+                  }}
+                >
+                  Founder &amp; Career Strategist
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right Column - Bio */}
@@ -98,15 +151,11 @@ export default function About() {
               Your Guide
             </span>
             <h2
-              className="about-animate"
+              className="about-animate tft-heading"
               style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 700,
-                fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-                lineHeight: 1.1,
-                letterSpacing: '-0.02em',
-                color: 'var(--color-text-primary)',
-                marginTop: '1rem',
+                fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+                lineHeight: 0.98,
+                marginTop: '0.75rem',
                 opacity: 0,
               }}
             >

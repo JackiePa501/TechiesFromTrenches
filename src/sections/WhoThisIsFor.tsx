@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { Check } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,14 +75,10 @@ export default function WhoThisIsFor() {
             Who This Is For
           </span>
           <h2
-            className="persona-animate"
+            className="persona-animate tft-heading"
             style={{
-              fontFamily: "'Space Grotesk', sans-serif",
-              fontWeight: 700,
-              fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-              lineHeight: 1.1,
-              letterSpacing: '-0.02em',
-              color: 'var(--color-text-primary)',
+              fontSize: 'clamp(2.25rem, 5vw, 4rem)',
+              lineHeight: 0.98,
               marginTop: '1rem',
               opacity: 0,
             }}
@@ -101,63 +98,33 @@ export default function WhoThisIsFor() {
           {personas.map((persona, i) => (
             <div
               key={i}
-              className="persona-animate"
+              className="persona-animate tft-card"
               style={{
-                background: 'var(--color-bg-primary)',
-                border: '1px solid var(--color-border)',
-                borderRadius: '12px',
                 padding: '1.5rem',
-                transition: 'all 0.3s ease',
                 cursor: 'default',
                 opacity: 0,
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget;
-                el.style.borderColor = 'var(--color-border-hover)';
-                el.style.transform = 'translateY(-4px)';
-                el.style.boxShadow = '0 8px 32px rgba(0,0,0,0.3)';
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget;
-                el.style.borderColor = 'var(--color-border)';
-                el.style.transform = 'translateY(0)';
-                el.style.boxShadow = 'none';
               }}
             >
               <div
                 style={{
-                  width: '28px',
-                  height: '28px',
-                  borderRadius: '50%',
-                  background: 'rgba(212, 168, 83, 0.1)',
+                  width: '32px',
+                  height: '32px',
+                  borderRadius: '9px',
+                  background: 'rgba(76, 141, 255, 0.12)',
+                  border: '1px solid rgba(76, 141, 255, 0.25)',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: '0.875rem',
                   marginBottom: '0.875rem',
                 }}
               >
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  style={{ color: 'var(--color-accent-gold)' }}
-                >
-                  <path
-                    d="M5 13l4 4L19 7"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                <Check size={16} strokeWidth={2.25} color="var(--color-accent-2)" />
               </div>
               <h3
                 style={{
                   fontFamily: "'Inter', sans-serif",
                   fontWeight: 600,
-                  fontSize: '1.25rem',
+                  fontSize: '1.0625rem',
                   lineHeight: 1.3,
                   color: 'var(--color-text-primary)',
                   margin: 0,

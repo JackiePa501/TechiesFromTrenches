@@ -45,7 +45,7 @@ export default function Navigation({ lenisRef }: NavigationProps) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        background: visible ? 'rgba(10, 10, 15, 0.85)' : 'transparent',
+        background: visible ? 'rgba(16, 24, 40, 0.8)' : 'transparent',
         backdropFilter: visible ? 'blur(12px)' : 'none',
         WebkitBackdropFilter: visible ? 'blur(12px)' : 'none',
         borderBottom: visible ? '1px solid var(--color-border)' : '1px solid transparent',
@@ -63,15 +63,15 @@ export default function Navigation({ lenisRef }: NavigationProps) {
         onClick={() => scrollTo('#hero')}
       >
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <path d="M12 4L12 20M12 4L6 10M12 4L18 10" stroke="#D4A853" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M12 4L12 20M12 4L6 10M12 4L18 10" stroke="var(--color-accent)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
         <span
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontWeight: 700,
-            fontSize: '1rem',
+            fontFamily: "'Bebas Neue', sans-serif",
+            fontWeight: 400,
+            fontSize: '1.35rem',
             color: 'var(--color-text-primary)',
-            letterSpacing: '-0.02em',
+            letterSpacing: '0.04em',
           }}
         >
           Techies From Trenches
@@ -123,27 +123,28 @@ export default function Navigation({ lenisRef }: NavigationProps) {
       <button
         onClick={() => scrollTo('#pricing')}
         style={{
-          fontFamily: "'Space Grotesk', sans-serif",
+          fontFamily: "'Inter', sans-serif",
           fontWeight: 600,
-          fontSize: '1rem',
-          letterSpacing: '0.02em',
-          background: 'var(--color-accent-gold)',
-          color: 'var(--color-bg-primary)',
+          fontSize: '0.9375rem',
+          letterSpacing: '0.01em',
+          background: 'var(--color-accent)',
+          color: '#061226',
           border: 'none',
           borderRadius: 'var(--button-radius)',
-          padding: '0.625rem 1.5rem',
+          padding: '0.75rem 1.5rem',
           cursor: 'pointer',
+          boxShadow: '0 8px 24px rgba(76,141,255,0.22)',
           transition: 'all 0.25s ease',
         }}
         onMouseEnter={(e) => {
           const el = e.currentTarget;
-          el.style.background = 'var(--color-accent-gold-light)';
-          el.style.transform = 'scale(1.03)';
+          el.style.background = 'var(--color-accent-2)';
+          el.style.transform = 'translateY(-2px)';
         }}
         onMouseLeave={(e) => {
           const el = e.currentTarget;
-          el.style.background = 'var(--color-accent-gold)';
-          el.style.transform = 'scale(1)';
+          el.style.background = 'var(--color-accent)';
+          el.style.transform = 'translateY(0)';
         }}
       >
         Join Now
